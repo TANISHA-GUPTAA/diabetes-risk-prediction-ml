@@ -1,0 +1,85 @@
+{
+  "selected_model_name": "Decision Tree",
+  "selection_rationale": "Decision Tree was selected as the final model because it achieved the strongest balance of F1-Score (0.6783) and ROC-AUC (0.7622) on held-out test data, supported by robust cross-validation stability (CV F1: 0.5866). In medical screening tasks, balancing Recall (catching true positive cases) and Precision (minimizing false alarms) is critical, making F1 and ROC-AUC more reliable criteria than raw accuracy alone.",
+  "test_metrics": {
+    "accuracy": 0.7597402597402597,
+    "precision": 0.639344262295082,
+    "recall": 0.7222222222222222,
+    "f1": 0.6782608695652174,
+    "roc_auc": 0.7622222222222222
+  },
+  "confusion_matrix": {
+    "tn": 78,
+    "fp": 22,
+    "fn": 15,
+    "tp": 39,
+    "matrix": [
+      [
+        78,
+        22
+      ],
+      [
+        15,
+        39
+      ]
+    ]
+  },
+  "cv_summary": {
+    "folds": 5,
+    "best_cv_f1": 0.5866
+  },
+  "model_comparison": [
+    {
+      "model_name": "Logistic Regression",
+      "is_tuned": true,
+      "best_params": "{'C': 0.1, 'class_weight': 'balanced', 'solver': 'lbfgs'}",
+      "cv_f1": 0.6823,
+      "accuracy": 0.7078,
+      "precision": 0.5714,
+      "recall": 0.6667,
+      "f1": 0.6154,
+      "roc_auc": 0.8104
+    },
+    {
+      "model_name": "K-Nearest Neighbors",
+      "is_tuned": true,
+      "best_params": "{'metric': 'euclidean', 'n_neighbors': 9, 'weights': 'distance'}",
+      "cv_f1": 0.6366,
+      "accuracy": 0.7403,
+      "precision": 0.6346,
+      "recall": 0.6111,
+      "f1": 0.6226,
+      "roc_auc": 0.7969
+    },
+    {
+      "model_name": "Decision Tree",
+      "is_tuned": false,
+      "best_params": "Default",
+      "cv_f1": 0.5866,
+      "accuracy": 0.7597,
+      "precision": 0.6393,
+      "recall": 0.7222,
+      "f1": 0.6783,
+      "roc_auc": 0.7622
+    },
+    {
+      "model_name": "Random Forest",
+      "is_tuned": true,
+      "best_params": "{'max_depth': None, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 150}",
+      "cv_f1": 0.6536,
+      "accuracy": 0.7468,
+      "precision": 0.6531,
+      "recall": 0.5926,
+      "f1": 0.6214,
+      "roc_auc": 0.8146
+    }
+  ],
+  "dataset_summary": {
+    "total_samples": 768,
+    "train_samples": 614,
+    "test_samples": 154,
+    "num_features": 8,
+    "positive_class_count": 268,
+    "negative_class_count": 500
+  }
+}

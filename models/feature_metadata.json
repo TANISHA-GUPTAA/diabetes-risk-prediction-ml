@@ -1,0 +1,102 @@
+{
+  "feature_names": [
+    "Pregnancies",
+    "Glucose",
+    "BloodPressure",
+    "SkinThickness",
+    "Insulin",
+    "BMI",
+    "DiabetesPedigreeFunction",
+    "Age"
+  ],
+  "features": {
+    "Pregnancies": {
+      "name": "Pregnancies",
+      "description": "Number of times pregnant (0 is normal for non-pregnant/nulliparous individuals)",
+      "dtype": "int64",
+      "min_observed": 0.0,
+      "max_observed": 17.0,
+      "mean_observed": 3.8192182410423454,
+      "median_observed": 3.0,
+      "default_ui_value": 3.0,
+      "is_zero_treated_as_missing": false
+    },
+    "Glucose": {
+      "name": "Glucose",
+      "description": "Plasma glucose concentration 2 hours after an oral glucose tolerance test (mg/dL)",
+      "dtype": "int64",
+      "min_observed": 0.0,
+      "max_observed": 199.0,
+      "mean_observed": 120.90879478827361,
+      "median_observed": 117.0,
+      "default_ui_value": 117.0,
+      "is_zero_treated_as_missing": true
+    },
+    "BloodPressure": {
+      "name": "BloodPressure",
+      "description": "Diastolic blood pressure (mm Hg)",
+      "dtype": "int64",
+      "min_observed": 0.0,
+      "max_observed": 122.0,
+      "mean_observed": 69.44299674267101,
+      "median_observed": 72.0,
+      "default_ui_value": 72.0,
+      "is_zero_treated_as_missing": true
+    },
+    "SkinThickness": {
+      "name": "SkinThickness",
+      "description": "Triceps skin fold thickness (mm)",
+      "dtype": "int64",
+      "min_observed": 0.0,
+      "max_observed": 99.0,
+      "mean_observed": 20.77687296416938,
+      "median_observed": 23.0,
+      "default_ui_value": 29.0,
+      "is_zero_treated_as_missing": true
+    },
+    "Insulin": {
+      "name": "Insulin",
+      "description": "2-Hour serum insulin (mu U/ml)",
+      "dtype": "int64",
+      "min_observed": 0.0,
+      "max_observed": 744.0,
+      "mean_observed": 78.66612377850163,
+      "median_observed": 40.5,
+      "default_ui_value": 125.0,
+      "is_zero_treated_as_missing": true
+    },
+    "BMI": {
+      "name": "BMI",
+      "description": "Body mass index (weight in kg / (height in m)^2)",
+      "dtype": "float64",
+      "min_observed": 0.0,
+      "max_observed": 67.1,
+      "mean_observed": 31.97328990228013,
+      "median_observed": 32.3,
+      "default_ui_value": 32.4,
+      "is_zero_treated_as_missing": true
+    },
+    "DiabetesPedigreeFunction": {
+      "name": "DiabetesPedigreeFunction",
+      "description": "Diabetes pedigree function (genetic score based on family history)",
+      "dtype": "float64",
+      "min_observed": 0.084,
+      "max_observed": 2.329,
+      "mean_observed": 0.477428338762215,
+      "median_observed": 0.3825,
+      "default_ui_value": 0.38,
+      "is_zero_treated_as_missing": false
+    },
+    "Age": {
+      "name": "Age",
+      "description": "Age of the subject in years",
+      "dtype": "int64",
+      "min_observed": 21.0,
+      "max_observed": 81.0,
+      "mean_observed": 33.36644951140065,
+      "median_observed": 29.0,
+      "default_ui_value": 29.0,
+      "is_zero_treated_as_missing": false
+    }
+  }
+}
