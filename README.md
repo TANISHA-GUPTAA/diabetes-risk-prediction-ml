@@ -220,7 +220,7 @@ diabetes-risk-prediction/
 
 ### 1. Clone the Repository
 ```bash
-git clone <YOUR_ACTUAL_REPOSITORY_URL>
+git clone https://github.com/TANISHA-GUPTAA/diabetes-risk-prediction-ml.git
 cd diabetes-risk-prediction
 ```
 
